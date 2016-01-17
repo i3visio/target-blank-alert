@@ -12,7 +12,7 @@
 
 Description:
 ============
-OpenKM Search is a Google Chrome, Chromium or Opera extension that can be used to perform queries towards an OpenKM server.
+Kamify is a Google Chrome, Chromium or Opera extension that can be used to perform queries towards an OpenKM server.
 The extension can be configured using any of these browsers.
 
 License: GPLv3+

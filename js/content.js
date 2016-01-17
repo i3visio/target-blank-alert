@@ -7,7 +7,7 @@
 
     Copyright 2016 Félix Brezo and Yaiza Rubio (i3visio, contacto@i3visio.com)
 
-    This file is part of phishify. You can redistribute it and/or 
+    This file is part of kamify. You can redistribute it and/or 
     modify it under the terms of the GNU General Public License as published 
     by the Free Software Foundation, either version 3 of the License, or (at 
     your option) any later version.
