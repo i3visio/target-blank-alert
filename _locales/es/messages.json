@@ -4,7 +4,7 @@
         "description": "The name of the extension."
     },
     "extDescription": {
-        "message": "OpenKM Search es una extensión para Google Chrome, Chromium u Opera con la que realizar peticiones a un servidor de OpenKM.",
+        "message": "Kamify es una extensión para Google Chrome, Chromium u Opera con la que realizar peticiones a un servidor de OpenKM.",
         "description": "The description of the extension."
     },
     "extAuthor": {

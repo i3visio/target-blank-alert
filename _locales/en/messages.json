@@ -4,7 +4,7 @@
         "description": "The name of the extension."
     },
     "extDescription": {
-        "message": "OpenKM Search is a Google Chrome, Chromium or Opera extension that can be used to perform queries towards an OpenKM server.",
+        "message": "Kamify is a Google Chrome, Chromium or Opera extension that can be used to perform queries towards an OpenKM server.",
         "description": "The description of the extension."
     },
     "extAuthor": {
