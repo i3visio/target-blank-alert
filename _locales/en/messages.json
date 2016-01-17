@@ -1,0 +1,90 @@
+{
+    "extName": {
+        "message": "Kamify",
+        "description": "The name of the extension."
+    },
+    "extDescription": {
+        "message": "OpenKM Search is a Google Chrome, Chromium or Opera extension that can be used to perform queries towards an OpenKM server.",
+        "description": "The description of the extension."
+    },
+    "extAuthor": {
+        "message": "i3visio (Yaiza Rubio and Félix Brezo)",
+        "description": "The authors of the extension."
+    },
+    "extAboutText": {
+        "message": "We are a team of Open Sources analysts focused on making life easier for other intelligence analysts. The brand we use is <a href=\"http://i3visio.com\">i3visio</a>. If you are curious, you can find more info about us and other projects in which we are involved here:",
+        "description": "The HTML code to be shown in the about page (without the social links)."
+    },
+    "footerLicensed": {
+        "message": "This extension is licensed under <a href='http://www.gnu.org/licenses/gpl-3.0.txt'>GPLv3+</a>.",
+        "description": "The HTML code to be shown in the license disclaimer in the footer."
+    },
+    "footerCode": {
+        "message": "Code",
+        "description": "The text to be shown when linking to the code in the footer."
+    },
+    "footerIssues": {
+        "message": "Issues",
+        "description": "The text to be shown when linking to the issues Github page in the footer."
+    },
+    "badgeTitle": {
+        "message": "OpenKM Search",
+        "description": "The name of the extension as it will be shown in the badge appearing in the toolbar."
+    },
+    "texSearch": {
+        "message": "Search to perform",
+        "description": "Text that would be placed by default in the textfield for the search."
+    },
+    "butSearch": {
+        "message": "Search",
+        "description": "Text to be shown in the search button."
+    },
+    "aleConfigurationSaved": {
+        "message": "Configuration saved.",
+        "description": "Text to be shown when the new configuration is being saved."
+    },
+    "msgNotFoundValidConfig": {
+        "message": "Check the configuration. Some of the compulsory elements (URL, user or password) has not been provided.",
+        "description": "Text of the warning message to show when some configuration has not been provided."
+    },
+    "tabSearch": {
+        "message": "Search",
+        "description": "Text to be shown in the Search tab."
+    },
+    "tabProfiles": {
+        "message": "Profiles",
+        "description": "Text to be shown in the Profiles tab."
+    },
+    "fileCoding": {
+        "message": "/doc/en/Coding",
+        "description": "The localised path of the file where the instructions for coders are given."
+    },
+    "fileTranslating": {
+        "message": "/doc/en/Translating",
+        "description": "The localised path of the file where the instructions for translators are given."
+    },
+    "fileUsing": {
+        "message": "/doc/en/Using",
+        "description": "The localised path of the file where the instructions for end users are given."
+    },    
+    "fileFAQ": {
+        "message": "/doc/en/FAQ",
+        "description": "The localised path of the file where the frequent questions will be stored."
+    },
+    "nameCoding": {
+        "message": "Code",
+        "description": "The localised name of the file where the instructions for coders are given."
+    },
+    "nameTranslating": {
+        "message": "Translation",
+        "description": "The localised name of the file where the instructions for translators are given."
+    },
+    "nameUsing": {
+        "message": "Usage",
+        "description": "The localised name of the file where the instructions for end users are given."
+    },    
+    "nameFAQ": {
+        "message": "FAQ",
+        "description": "The localised name of the file where the frequent questions will be stored."
+    }
+}

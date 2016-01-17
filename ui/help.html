@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<!--
+ _ _____      _     _
+(_)___ /_   _(_)___(_) ___         ___ ___  _ __ ___
+| | |_ \ \ / / / __| |/ _ \       / __/ _ \| '_ ` _ \
+| |___) \ V /| \__ \ | (_) |  _  | (_| (_) | | | | | |
+|_|____/ \_/ |_|___/_|\___/  (_)  \___\___/|_| |_| |_|
+
+Copyright (C) F. Brezo and Y. Rubio (i3visio) 2016
+
+-->
+<html>
+<head>
+<title>__MSG_extName__</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="__MSG_extDescription__" />
+<meta name="copyright" content="__MSG_extAuthor__" />
+
+
+<!-- Loading local Jquery --> 
+<script type="text/javascript" src="/thirdparties/jquery/1.9.1/jquery.min.js"></script>
+
+<!-- Loading Kickstart files-->
+<link rel="stylesheet" type="text/css" href="/thirdparties/html-kickstart/css/kickstart.css" media="all" />
+<script type="text/javascript" src="/thirdparties/html-kickstart/js/kickstart.js"></script>
+
+<!-- Loading local Font Awesome 4.5.0 -->
+<link rel="stylesheet" href="/thirdparties/font-awesome_4.5.0/font-awesome.min.css">
+
+<!-- Loading custom styles for the application -->
+<link rel="stylesheet" type="text/css" href="/css/style.css" media="all" />
+
+<!-- Loading MMD library -->
+<script src="/thirdparties/mmd/mmd.min.js"></script>
+
+</head>
+<body>
+
+<!-- Menu Horizontal -->
+<ul class="menu">
+	<li class="current"><a href="/ui/popup.html" ><i class="fa fa-home"></i> __MSG_extName__</a></li>
+	<li class="right"><a href="/ui/options.html"> <i class="fa fa-cog"></i></a></li>
+	<li class="right"><a href="/ui/help.html"><i class="fa fa-support"></i></a>
+	<li class="right"><a href="/ui/about.html"><i class="fa fa-info-circle"></i></a></li>
+</ul>
+
+
+<!-- ===================================== END HEADER ===================================== -->
+
+<!-- ===================================== START CONTENT ===================================== -->
+
+<div class="grid" style="width: 500px;">
+	<div class="col_12">
+		<!-- Tabs Left -->
+		<ul class="tabs left">
+			<li><a href="#tabFAQ"><i class="fa fa-book"></i> __MSG_nameFAQ__</a></li>
+			<li><a href="#tabCoding"><i class="fa fa-code"></i> __MSG_nameCoding__</a></li>
+			<li><a href="#tabTranslating"><i class="fa fa-language"></i> __MSG_nameTranslating__</a></li>
+			<li><a href="#tabUsing"><i class="fa fa-user"></i> __MSG_nameUsing__</a></li>
+		</ul>
+		<div id="tabFAQ" class="tab-content">
+			<iframe src="__MSG_fileFAQ__"></iframe>
+		</div>
+		<div id="tabCoding" class="tab-content">
+			<iframe src="__MSG_fileCoding__"  width="300"></iframe>
+		</div>
+		<div id="tabTranslating" class="tab-content">
+			<iframe src="__MSG_fileTranslating__" ></iframe>
+		</div>
+		<div id="tabUsing" class="tab-content">
+			<iframe src="__MSG_fileUsing__"></iframe>
+		</div>
+	
+	</div>
+</div>
+
+<!-- ===================================== END CONTENT ===================================== -->
+
+<!-- =================================== START FOOTER ====================================== -->
+
+<div id="footer" class="grid center clearfix">
+	<br>
+	<small>
+		<div>
+			<img src="/img/logo.png" height="12px;" width="12px;"></i> __MSG_extName__ | 
+			__MSG_footerLicensed__
+		</div>
+
+		<div class="project">
+			Copyright (C)  <a href="https://i3visio.com">i3visio</a>, 2016: 
+			<a href="https://github.com/i3visio/web-surfer-assistant">__MSG_footerCode__</a> &middot;
+			<a href="https://github.com/i3visio/web-surfer-assistant/issues">__MSG_footerIssues__</a> &middot;
+			<a href="/ui/help.html">__MSG_footerDoc__</a>
+		</div>
+	</small>
+	<br>
+</div>
+
+<!-- Script needed to translate the given interface onto a different language. This MUST be the latest thing in the document. -->
+<script src="/js/background.js"></script>
+
+<!-- Script needed to translate the given interface onto a different language. This MUST be the latest thing in the document. -->
+<script src="/js/help.js"></script>
+
+<!-- Script needed to translate the given interface onto a different language. This MUST be the latest thing in the document. -->
+<script src="/js/localize.js"></script>
+
+</body>
+</html>

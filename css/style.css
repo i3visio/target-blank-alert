@@ -1,0 +1,76 @@
+.menu ul{
+	min-width:100px;
+	max-width:300%;
+}
+
+.menu ul.right{
+	left:auto;
+	right:0;
+}
+
+.menu li a{
+	font-size:0.9em;
+	padding:15px 20px;
+}
+
+.menu li.brand a{
+	font-size:1em;
+}
+
+.menu li.left{
+	text-align: left;
+}
+
+.menu li.right{
+	text-align: right;
+}
+
+.menu ul{
+	min-width:100px;
+	max-width:300%;
+}
+
+.highlight {
+	font-weight: bold;
+	color: #2233AA;
+}
+
+
+/*td.center { text-align: center; }*/
+td { 
+	text-align: center;
+}
+
+/*tr.center { text-align: center; }*/
+th { 
+	text-align: center;
+}
+
+.result {
+    width: 300px;
+    border: 1px solid #333399;
+}
+
+docname {
+	font-weight: bold;
+	font-size:1em;
+	padding:10px;
+}
+
+date {
+	font-style: italic;
+	float: right;
+	padding:10px;
+}
+
+excerpt {
+	font-style: italic;
+	font-size:1em;
+	padding:10px;
+}
+
+
+
+
+
+

@@ -1,0 +1,118 @@
+{
+    "extName": {
+        "message": "Kamify",
+        "description": "The name of the extension."
+    },
+    "extDescription": {
+        "message": "OpenKM Search es una extensión para Google Chrome, Chromium u Opera con la que realizar peticiones a un servidor de OpenKM.",
+        "description": "The description of the extension."
+    },
+    "extAuthor": {
+        "message": "i3visio (Yaiza Rubio y Félix Brezo)",
+        "description": "The authors of the extension."
+    },
+    "extAboutText": {
+        "message": "Somos un equipo de analistas de fuentes abiertas centrados en facilitar el día a día de otros analistas de inteligencia. La marca que utilizamos es <a href=\"http://i3visio.com\">i3visio</a>. Si tienes curiosidad por lo que hacemos, podrás enconrar más información sobre nosotros y sobre otros proyectos en los que estamos implicados aquí:",
+        "description": "El código HTML que se mostrará en la página about.html (sin los enlaces sociales)."
+    },
+    "footerLicensed": {
+        "message": "Esta extensión está licenciada bajo <a href='http://www.gnu.org/licenses/gpl-3.0.txt'>GPLv3+</a>.",
+        "description": "El código HTMl que se mostrará en el pie de cada ventana."
+    },
+    "footerCode": {
+        "message": "Código",
+        "description": "El texto que figurará en el link al código fuente en el pie."
+    },
+    "footerIssues": {
+        "message": "Problemas",
+        "description": "El texto que figurará en el link a la página de Github de Issues en el pie."
+    },
+    "badgeTitle": {
+        "message": "OpenKM Search",
+        "description": "The name of the extension as it will be shown in the badge appearing in the toolbar."
+    },
+    "texQuery": {
+        "message": "Búsqueda a realizar",
+        "description": "Texto que aparecerá en el placeholder de búsqueda por defecto."
+    },
+    "butSearch": {
+        "message": "Buscar",
+        "description": "Texto del botón de búsqueda"
+    },
+    "labServer": {
+        "message": "URL del servidor de OpenKM:",
+        "description": "Texto a mostrar en la etiqueta del campo de texto de usuario."
+    },
+    "labStructure": {
+        "message": "(debe acabar con el carácter '/')",
+        "description": "Texto de ayuda a mostrar junto a la estructura."
+    },
+    "labUsername": {
+        "message": "Nombre de usuario:",
+        "description": "Texto a mostrar en la etiqueta del campo de texto de usuario."
+    },
+    "plaUsername": {
+        "message": "Usuario",
+        "description": "Texto por defecto a mostrar en el campo de password."
+    },
+    "labPassword": {
+        "message": "Contraseña:",
+        "description": "Texto a mostrar en la etiqueta del campo de texto de la contraseña."
+    },
+    "plaPassword": {
+        "message": "Contraseña",
+        "description": "Texto por defecto a mostrar en el campo de password."
+    },
+    "butSave": {
+        "message": "Guardar configuración",
+        "description": "Texto del botón de guardado de configuración."
+    },
+    "aleConfigurationSaved": {
+        "message": "Configuración guardada.",
+        "description": "Texto del mensaje de alerta cuando se guarda la configuración."
+    },
+    "msgNotFoundValidConfig": {
+        "message": "Revisa la configuración. Alguno de los elementos obligatorios (URL, usuario o contraseña) no ha sido completado.",
+        "description": "Texto del mensaje de alerta a mostrar cuando faltan datos de la configuración básica."
+    },
+    "tabSearch": {
+        "message": "Buscar",
+        "description": "Texto a mostrar en el tab de búsqueda."
+    },
+    "tabProfiles": {
+        "message": "Perfiles",
+        "description": "Texto a mostrar en el tab de configuración de perfiles."
+    },
+    "fileCoding": {
+        "message": "/doc/en/Coding",
+        "description": "The localised path of the file where the instructions for coders are given (if exists!)."
+    },
+    "fileTranslating": {
+        "message": "/doc/en/Translating",
+        "description": "The localised path of the file where the instructions for translators are given (if exists!)."
+    },
+    "fileUsing": {
+        "message": "/doc/en/Using",
+        "description": "The localised path of the file where the instructions for end users are given (if exists!)."
+    },    
+    "fileFAQ": {
+        "message": "/doc/en/FAQ",
+        "description": "The localised path of the file where the frequent questions will be stored (if exists!)."
+    },
+    "nameCoding": {
+        "message": "Programación",
+        "description": "The localised name of the file where the instructions for coders are given."
+    },
+    "nameTranslating": {
+        "message": "Traducción",
+        "description": "The localised name of the file where the instructions for translators are given."
+    },
+    "nameUsing": {
+        "message": "Uso",
+        "description": "The localised name of the file where the instructions for end users are given."
+    },    
+    "nameFAQ": {
+        "message": "FAQ",
+        "description": "The localised name of the file where the frequent questions will be stored."
+    }
+}
