@@ -22,38 +22,4 @@
 
 */
 
-// To change when the request is performed
-chrome.extension.onRequest.addListener(function(request, sender) {
-    chrome.tabs.query({active: true}, function(tabArray) {
-        chrome.browserAction.setBadgeText({"text": ""});
-        var punycodeStr = "xn--";
-        // Cogemos la URL de la pestaña activa
-        var currentURL = tabArray[0].url;
-
-        // Si matchea con la objetivo... 
-        if (currentURL.indexOf(punycodeStr) > -1) {
-            alert(chrome.i18n.getMessage("alertWarning") + currentURL);
-            // Mostrando el cambio en un texto
-            chrome.browserAction.setBadgeText({"text": "Puny"});
-        }
-    });
-});
-
-//To change when the selection changes...
-chrome.tabs.onSelectionChanged.addListener(function(tabId, props) {
-
-    chrome.tabs.query({active: true}, function(tabArray) {
-        chrome.browserAction.setBadgeText({"text": ""});
-        var punycodeStr = "xn--";
-        // Cogemos la URL de la pestaña activa
-        var currentURL = tabArray[0].url;
-
-        // Si matchea con la objetivo... 
-        if (currentURL.indexOf(punycodeStr) > -1) {
-            alert(chrome.i18n.getMessage("alertWarning") + currentURL);
-            // Mostrando el cambio en un texto
-            chrome.browserAction.setBadgeText({"text": "Puny"});
-        }
-    });
-});
 
