@@ -64,7 +64,7 @@ function generateHtmlResults(jsonDict, baseUrl) {
         
         var newRow = "<tr class='result'>";
         // Setting the file name and the Download link
-        newRow += "<docname>" + getFileIconCode (res["document"]["mimeType"] ) + " <a target='_blank' href=' " + baseUrl + "Download?path=/" + res["document"]["path"] + "'>" + res["document"]["path"].substring(res["document"]["path"].lastIndexOf('/')+1)+ "</a></docname>";
+        newRow += "<docname>" + getFileIconCode (res["document"]["mimeType"] ) + " <a target='_blank' href='" + baseUrl + "OpenKM/Download?path=/" + res["document"]["path"] + "'>" + res["document"]["path"].substring(res["document"]["path"].lastIndexOf('/')+1)+ "</a></docname>";
         newRow += "<date>Date: " + res["document"]["actualVersion"]["created"].toString()+ "</date><br><br>";
         
         // Adding the excerpt if it exists
@@ -101,11 +101,11 @@ function runQuery() {
     chrome.storage.sync.get("config", function (storage) {
         var dictConfig = storage["config"];
         
-        //var apiUrl = "https://connect.h4ck.me:8443/OpenKM/";
-        //var apiUrl = "http://217.160.143.32:8080/OpenKM/";
+        //var apiUrl = "https://connect.h4ck.me:8443/";
+        //var apiUrl = "http://217.160.143.32:8080/";
         var apiUrl = dictConfig["profiles"][dictConfig["currentProfile"]]["url"];
         
-        var requestUrl = apiUrl + "services/rest/search/findByContent?content=" + document.getElementById("texQuery").value;
+        var requestUrl = apiUrl + "OpenKM/services/rest/search/findByContent?content=" + document.getElementById("texQuery").value;
 
         var xhr = new XMLHttpRequest();
 
@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', function () {
     Grabbing the configuration and seting it into the UI.
 */
 document.addEventListener('DOMContentLoaded', function () {
-    console.log("Grabbing the current configuration...");
+    //console.log("Grabbing the current configuration...");
     
     // Grabbing the configuration
     chrome.storage.sync.get("config", function (storage) {

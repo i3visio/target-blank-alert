@@ -66,34 +66,38 @@ function saveConfiguration() {
 
     console.log("options.js: " + textConfig);
 
+    var correctOptions = true;
+
     if (!validateURL(dictProfile["url"])) {
         // Showing warning message
-        document.getElementById('optMessage').innerHTML = "<div class='notice warning'><i class='icon-warning-sign icon-large'></i> " + "WARNING: URL not valid! Configuration will NOT  be stored unless corrected." + "<a href='#close' class='icon-remove'></a></div>";
-        alert("URL not valid!");
+        document.getElementById('optMessage').innerHTML = "<div class='notice warning'><i class='icon-warning-sign icon-large'></i> " + "WARNING: URL not valid! Configuration is NOT properly defined to let the application work." + "<a href='#close' class='icon-remove'></a></div>";
+        //alert("URL not valid!");
         
-        return false;
+        correctOptions = false;
     }
     else if (dictProfile["username"] == "" || dictProfile["password"] == "") {
         // Showing warning message
-        document.getElementById('optMessage').innerHTML = "<div class='notice warning'><i class='icon-warning-sign icon-large'></i> " + "WARNING: User or password not provided. Configuration will NOT  be stored unless corrected." + "<a href='#close' class='icon-remove'></a></div>";
-        return false;
-    }
+        document.getElementById('optMessage').innerHTML = "<div class='notice warning'><i class='icon-warning-sign icon-large'></i> " + "WARNING: User or password not provided. Configuration is NOT properly defined to let the application work." + "<a href='#close' class='icon-remove'></a></div>";
 
+        //alert("Username or password not provided!");
+        correctOptions = false;
+    }
+    
     // Save it using the Chrome extension storage API.
     chrome.storage.sync.set({'config': dictConfig}, function() {
         // Notify that we saved.
         console.log("Settings saved");
-        // Showing warning message
-        alert(chrome.i18n.getMessage(aleConfigurationSaved));
-        document.getElementById('optMessage').innerHTML = "<div class='notice success'><i class='icon-ok icon-large'></i> " + "SUCCESS!" + "<a href='#close' class='icon-remove'></a></div>";
+        // Showing message
+        //alert(chrome.i18n.getMessage(aleConfigurationSaved));
+
+        console.log("Sending reload message...");
+        // Sending message of task completed to let the scripts reload the information
+        chrome.runtime.sendMessage({done: true});
     });
     
-    console.log("Sending reload message...");
-    // Sending message of task completed to let the scripts reload the information
-    chrome.runtime.sendMessage({done: true});
-    document.getElementById('optMessage').innerHTML = "<div class='notice success'><i class='icon-ok icon-large'></i> " + "SUCCESS!" + "<a href='#close' class='icon-remove'></a></div>";
-
-    window.close();
+    if (correctOptions) {
+        document.getElementById('optMessage').innerHTML = "<div class='notice success'><i class='icon-ok icon-large'></i> " + "SUCCESS!" + "<a href='#close' class='icon-remove'></a></div>";
+    }
 
     return true;
 }
@@ -108,9 +112,8 @@ document.addEventListener('DOMContentLoaded', function () {
         var dictConfig = storage["config"];
 
         if (!validateURL(dictConfig["profiles"][dictConfig["currentProfile"]]["url"])) {
-            alert(chrome.i18n.getMessage(msgNotFoundValidConfig));
-            document.getElementById('optMessage').innerHTML = "<div class='notice error'><i class='icon-remove-sign icon-large'></i> " + "ERROR" + "<a href='#close' class='icon-remove'></a></div>";
-            alert("Url not valid!");
+            //alert(chrome.i18n.getMessage(msgNotFoundValidConfig));
+            document.getElementById('optMessage').innerHTML = "<div class='notice error'><i class='icon-remove-sign icon-large'></i> " + "ERROR: URL is not valid" + "<a href='#close' class='icon-remove'></a></div>";
         }
         else if (dictConfig["profiles"][dictConfig["currentProfile"]]["username"] == "" || dictConfig["profiles"][dictConfig["currentProfile"]]["password"] == "") {
             // Showing warning message

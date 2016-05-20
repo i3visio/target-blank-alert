@@ -5,7 +5,7 @@
     |_|____/ \_/ |_|___/_|\___/  (_)  \___\___/|_| |_| |_|
 
     ========================================================================
-    OpenKM Search         Copyright (C) 2016  F. Brezo and Y. Rubio, i3visio
+    Kamify                Copyright (C) 2016  F. Brezo and Y. Rubio, i3visio
     ========================================================================
 
 [![License](https://img.shields.io/badge/license-GNU%20General%20Public%20License%20Version%203%20or%20Later-blue.svg)]()
