@@ -62,8 +62,16 @@ for (var i = 0; i < elements.length; i++) {
     }
 }
 
-console.log(vulnerables["GLOBAL"] );
 chrome.runtime.sendMessage({greeting: vulnerables}, function(response) {
-  console.log("Background said: " + response.farewell);
+  //alert("Background said: " + response.task);
 });
 
+
+// Listener to capture the message of an update needed to change the badge
+chrome.extension.onMessage.addListener(function(msg, sender, sendResponse) {
+  if (msg.task == 'recover_vulnerable_links') {
+    chrome.runtime.sendMessage({greeting: vulnerables}, function(response) {
+      //alert("Background said: " + response.task);
+    });
+  }
+});
