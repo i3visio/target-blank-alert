@@ -4,7 +4,7 @@
         "description": "The name of the extension."
     },
     "extDescription": {
-        "message": "Target Blank Alert is a Google Chrome, Chromium or Opera extension that can be used to avoid the infamous target _blank vulnerability",
+        "message": "Target Blank Alert warns users about the target _blank vulnerability",
         "description": "The description of the extension."
     },
     "extAuthor": {
