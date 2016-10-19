@@ -35,10 +35,11 @@ for (var i = 0; i < elements.length; i++) {
     var target = element.getAttribute("target");
     
     var thisLinkIsVulnerable = false;
-    
+
     if (target == "_blank") {
         var rel = element.getAttribute("rel");
-        if (rel.indexOf("null") > -1)  {
+        
+        if (rel == null)  {
             vulnerables["firefox"] += 1;
             vulnerables["chrome"] += 1;
             
