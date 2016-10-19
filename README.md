@@ -5,15 +5,14 @@
     |_|____/ \_/ |_|___/_|\___/  (_)  \___\___/|_| |_| |_|
 
     ========================================================================
-    Kamify                Copyright (C) 2016  F. Brezo and Y. Rubio, i3visio
+    Target Blank Alert    Copyright (C) 2016  F. Brezo and Y. Rubio, i3visio
     ========================================================================
 
 [![License](https://img.shields.io/badge/license-GNU%20General%20Public%20License%20Version%203%20or%20Later-blue.svg)]()
 
 Description:
 ============
-Kamify is a Google Chrome, Chromium or Opera extension that can be used to perform queries towards an OpenKM server.
-The extension can be configured using any of these browsers.
+Target Blank Alert is a Google Chrome, Chromium or Opera extension that helps the user to detect websites that are vulnerable to Target Blank Vulnerabilities. You can check a practical example on: https://dev.to/ben/the-targetblank-vulnerability-by-example.
 
 License: GPLv3+
 ===============
@@ -35,9 +34,6 @@ This is free software, and you are welcome to redistribute it under certain cond
 
 
 For more details on this issue, check the LICENSE file.
-
-The documentation of this program included in the doc folder is ruled by
-GNU Free Document License v1.3.
 
 Installation:
 =============

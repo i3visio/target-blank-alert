@@ -1,10 +1,10 @@
-Contributing to Kamify
-=======================
+Contributing to Target Blank Alert
+==================================
 
 Reporting issues, bugs and fresh ideas
 --------------------------------------
 
-The way in which we track the issues regarding the software is by means of the issues page in Github's project site, which can be found here: <https://github.com/i3visio/kamify/issues>.
+The way in which we track the issues regarding the software is by means of the issues page in Github's project site, which can be found here: <https://github.com/i3visio/target-blank-alert/issues>.
 Whether you have experimented problems with the installation, you have found a bug in a new platform or you feel that we can add a new functionality, you can find the place to report them there. The only "rule" is to notify one error per issue to be able to track the problems indepently, as well as trying to provide as much information as possible regarding the OS or version you are trying.
 
 If you find that a transform in Maltego is not behaving as expected, we recommend you to set the debug mode as True. Go to Manage --> Manage Transforms, choose the transform and mark the "Set debug info" as True. Please, copy the information shown in the new tab in the issue so as to provide more information to debug it faster.
@@ -12,15 +12,15 @@ If you find that a transform in Maltego is not behaving as expected, we recommen
 Contributing code
 -----------------
 
-Whether you want to add a new wrapper or fix a bug, the basic instructions to contribute and perform a pull request on Github are the following (we assume that you have installed Git by yourself, so please follow the instructions in the project's website to install it on your system <https://git-scm.com/downloads>). We will assume that the username for this test is `kamify_contributor`.
+Whether you want to add a new wrapper or fix a bug, the basic instructions to contribute and perform a pull request on Github are the following (we assume that you have installed Git by yourself, so please follow the instructions in the project's website to install it on your system <https://git-scm.com/downloads>). We will assume that the username for this test is `target-blank-alert_contributor`.
 
-First of all, logged in Github and fork the repository by pressing the corresponding button in <https://github.com/i3visio/kamify>. This will create a copy of the repository under your profile (i. e.: `https://github.com/kamify_contributor/kamify`).
+First of all, logged in Github and fork the repository by pressing the corresponding button in <https://github.com/i3visio/target-blank-alert>. This will create a copy of the repository under your profile (i. e.: `https://github.com/target-blank-alert_contributor/target-blank-alert`).
 
 You can clone your forked repository now:
 ```
-# This is an example! Change "kamify_contributor" for your nick!
-git clone https://github.com/kamify_contributor/kamify
-cd kamify
+# This is an example! Change "target-blank-alert_contributor" for your nick!
+git clone https://github.com/target-blank-alert_contributor/target-blank-alert
+cd target-blank-alert
 ```
 
 Then, you can modify any file you want, for example, the `README.md`.
@@ -49,7 +49,7 @@ You have to push the changes to your Github project.
 git push origin
 ```
 
-You're almost there. You can now go to your project's website (`http://github.com/kamify_contributor/kamify`) and click in the `Pulls` tab or going directly to it by appending `pulls` to your forked URL, something similar to `https://github.com/kamify_contributor/kamify/pulls`. Then provide there as much detail as you can about the contents of the pull request and shortly we will evaluate the changes and pushed it upstream.
+You're almost there. You can now go to your project's website (`http://github.com/target-blank-alert_contributor/target-blank-alert`) and click in the `Pulls` tab or going directly to it by appending `pulls` to your forked URL, something similar to `https://github.com/target-blank-alert_contributor/target-blank-alert/pulls`. Then provide there as much detail as you can about the contents of the pull request and shortly we will evaluate the changes and pushed it upstream.
 
 Style guide
 -----------
