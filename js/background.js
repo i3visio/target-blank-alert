@@ -41,5 +41,14 @@ chrome.runtime.onMessage.addListener(
         chrome.browserAction.setBadgeBackgroundColor({ color: colors["green"] }); 
     }
     
-    sendResponse({farewell: "Badge Should be set..."}); 
+    sendResponse({task: "Job Done!"}); 
   });
+  
+  
+  //To change when the selection changes...
+chrome.tabs.onSelectionChanged.addListener(function(tabId, props) {
+    // We send a message to the content
+    chrome.tabs.query({active: true, currentWindow: true}, function(tabs){
+        chrome.tabs.sendMessage(tabs[0].id, {task: "recover_vulnerable_links"}, function(response) {});  
+    });
+});
