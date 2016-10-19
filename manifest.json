@@ -32,8 +32,7 @@
         "128": "img/logo.png"
     },
     "permissions": [
-        "tabs",
-        "storage"
+        "tabs"
     ],
     "manifest_version": 2
 }

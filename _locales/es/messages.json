@@ -1,10 +1,10 @@
 {
     "extName": {
-        "message": "Kamify",
+        "message": "Target Blank Alert",
         "description": "The name of the extension."
     },
     "extDescription": {
-        "message": "Kamify es una extensión para Google Chrome, Chromium u Opera con la que realizar peticiones a un servidor de OpenKM.",
+        "message": "Target Blank Alert es una extensión para Google Chrome, Chromium u Opera con la que evitar que el usuario se vea afectado por una vulnerabilidad de tipo target _blank.",
         "description": "The description of the extension."
     },
     "extAuthor": {

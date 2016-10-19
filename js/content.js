@@ -21,6 +21,49 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 */
+// Initializing the vulnerable vars 
+var vulnerables = {};
+vulnerables["GLOBAL"] = 0;
+vulnerables["chrome"] = 0;
+vulnerables["firefox"] = 0;
 
-chrome.extension.sendRequest({redirect: true});
+var elements = document.getElementsByTagName('a');
+
+// Iterating through all the elements in the HTML code
+for (var i = 0; i < elements.length; i++) {
+    var element = elements[i];
+    var target = element.getAttribute("target");
+    
+    var thisLinkIsVulnerable = false;
+    
+    if (target == "_blank") {
+        var rel = element.getAttribute("rel");
+        if (rel.indexOf("null") > -1)  {
+            vulnerables["firefox"] += 1;
+            vulnerables["chrome"] += 1;
+            
+            thisLinkIsVulnerable = true;
+        }
+        else {
+            if (rel.indexOf("noopener") == -1) {
+                vulnerables["chrome"] += 1;
+                thisLinkIsVulnerable = true;
+            }
+            if (rel.indexOf("noreferrer") == -1)  {
+                vulnerables["firefox"] +=1;
+                
+                thisLinkIsVulnerable = true;
+            }
+        }
+    }
+    
+    if (thisLinkIsVulnerable) {
+        vulnerables["GLOBAL"] += 1;
+    }
+}
+
+console.log(vulnerables["GLOBAL"] );
+chrome.runtime.sendMessage({greeting: vulnerables}, function(response) {
+  console.log("Background said: " + response.farewell);
+});
 

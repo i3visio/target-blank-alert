@@ -19,7 +19,7 @@ Copyright (C) F. Brezo and Y. Rubio (i3visio) 2016
 <meta name="copyright" content="__MSG_extAuthor__" />
 
 
-<!-- Loading local Jquery --> 
+<!-- Loading local Jquery -->
 <script type="text/javascript" src="/thirdparties/jquery/1.9.1/jquery.min.js"></script>
 
 <!-- Loading Kickstart files-->
@@ -41,8 +41,6 @@ Copyright (C) F. Brezo and Y. Rubio (i3visio) 2016
 <!-- Menu Horizontal -->
 <ul class="menu">
 	<li class="current"><a href="/ui/popup.html" ><i class="fa fa-home"></i> __MSG_extName__</a></li>
-	<li class="right"><a href="/ui/options.html"> <i class="fa fa-cog"></i></a></li>
-	<li class="right"><a href="/ui/help.html"><i class="fa fa-support"></i></a>
 	<li class="right"><a href="/ui/about.html"><i class="fa fa-info-circle"></i></a></li>
 </ul>
 
@@ -51,20 +49,28 @@ Copyright (C) F. Brezo and Y. Rubio (i3visio) 2016
 <!-- ===================================== START FOOTER ===================================== -->
 <div class="grid" style="width: 500px;">
 	<div class="col_12">
-		<ul class="tabs left">
-			<li><a href="#tabSearch"><i class="fa fa-search"></i> __MSG_tabSearch__</a></li>
-		</ul>
-		<div id="tabSearch" class="tab-content">
-		    <center>
-				<div id="seaMessage"></div>
-		        <input id="texQuery" type="text" placeholder="__MSG_texQuery__" width="400px"/>
-		        <button class="small orange" id="butSearch"><span class="tooltip-bottom" title="__MSG_butSearch__"><i class="fa fa-search"></i> __MSG_butSearch__</span></button>
-		    </center>
-		    <div id="results">
-		        <!--<textarea id="texResults" placeholder="Placeholder Text"></textarea>-->
-		    </div>
-		</div>
 
+		<ul class="tabs left">
+			<!-- TODO: Summary
+			<li><a href="#tabInfo"><i class="fa fa-file-code-o"></i> Información sobre esta web</a></li>
+			-->
+			<li><a href="#tabFAQ"><i class="fa fa-support"></i> Sobre Target Blank Adviser</a></li>
+		</ul>
+		<!-- TODO: filling the tab
+		<div id="tabInfo" class="tab-content">
+			<h5>Sobre esta web</h5>
+			<div id="info"></div>
+			<div id="tweetThis"></div>
+
+		</div>-->
+		<div id="tabFAQ" class="tab-content">
+			<h6>¿Qué es eso de <code>target="_blank"</code>?</h6>
+			<p>Se trata de una funcionalidad propia de HTML que indica al navegador que el autor de la web quiere que el enlace referido se abra en una pestaña nueva.</p>
+			<h6>¿En qué consiste la vulnerabilidad?</h6>
+			<p>Los principales navegadores permiten un mal uso potencial de esta funcionalidad para abrir una pestaña nueva y modificar el contenido de la original. Esta capacidad puede ser usada para ataques de phishing orientados al robo de credenciales. En <a href="https://dev.to/ben/the-targetblank-vulnerability-by-example" target="_blank" rel="noreferrer noopener">esta web</a> hay un ejemplo práctico de qué puede producir. </p>
+			<h6>¿Qué puedo hacer para protegerme?</h6>
+			<p>De primeras, saber que existe y que algunas de las webs que utilizas habitualmente no lo han corregido. Esta extensión te avisará indicándote el número de enlaces peligrosos que se encuentran en cada sitio web. La concienciación es el mejor camino, así que si sabes de una web que aún no lo ha corregido, repórtaselo a los adminsitradores y avisa a otros usuarios.</p>
+		</div>
 
 	</div>
 </div>
@@ -73,18 +79,17 @@ Copyright (C) F. Brezo and Y. Rubio (i3visio) 2016
 <!-- ===================================== START FOOTER ===================================== -->
 
 <div id="footer" class="grid center clearfix">
-	<br>
+
 	<small>
 		<div>
-			<img src="/img/logo.png" height="12px;" width="12px;"></i> __MSG_extName__ | 
+			<img src="/img/logo.png" height="12px;" width="12px;"></i> __MSG_extName__ |
 			__MSG_footerLicensed__
 		</div>
 
 		<div class="project">
-			Copyright (C)  <a href="https://i3visio.com">i3visio</a>, 2016: 
-			<a href="https://github.com/i3visio/punycode-alert">__MSG_footerCode__</a> &middot;
-			<a href="https://github.com/i3visio/punycode-alert/issues">__MSG_footerIssues__</a> &middot;
-			<a href="/ui/help.html">__MSG_footerDoc__</a>
+			Copyright (C)  <a href="https://i3visio.com">i3visio</a>, 2016:
+			<a href="https://github.com/i3visio/target-blank">__MSG_footerCode__</a> &middot;
+			<a href="https://github.com/i3visio/target-blank/issues">__MSG_footerIssues__</a>
 		</div>
 	</small>
 	<br>

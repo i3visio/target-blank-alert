@@ -23,3 +23,23 @@
 */
 
 
+
+chrome.runtime.onMessage.addListener(
+  function(request, sender, sendResponse) {
+    // Defining colors in RGBA [Red, Green, Blue, Alpha (Transparency)] in a range from 0 to 255.
+    var colors = {};
+    colors["red"] = [128, 0, 0, 255];
+    colors["green"] = [0, 128, 0, 255];
+    colors["blue"] = [0, 0, 128, 255];
+                
+    chrome.browserAction.setBadgeText({"text": request.greeting["GLOBAL"].toString()});
+    
+    if (request.greeting["GLOBAL"] > 0) {
+        chrome.browserAction.setBadgeBackgroundColor({ color: colors["red"] }); 
+    }
+    else {
+        chrome.browserAction.setBadgeBackgroundColor({ color: colors["green"] }); 
+    }
+    
+    sendResponse({farewell: "Badge Should be set..."}); 
+  });
