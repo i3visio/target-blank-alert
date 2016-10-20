@@ -3,6 +3,9 @@ Target Blank Alert Changelog
 
 For more information, check the README.md in <http://github.com/i3visio/target-blank-alert>. For the To-Do list visit the issues website at <http://github.com/i3visio/target-blank-alert/issues>.
 
+0.2.1, 2016/10/20 -- Corrections in the FAQ.
+- Update the English FAQ.
+
 0.2.0, 2016/10/19 -- Fix the translation to English and Spanish.
 - Full internationalization to English and Spanish.
 - Edit the FAQ to be more explicative.

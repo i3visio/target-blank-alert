@@ -60,7 +60,7 @@
         "description": "Another question."
     },
     "answerFaq3": {
-        "message": "Los principales navegadores permiten un mal uso potencial de esta funcionalidad para abrir una pestaña nueva y modificar el contenido de la original. Esta capacidad puede ser usada para ataques de phishing orientados al robo de credenciales. En <a href='https://dev.to/ben/the-targetblank-vulnerability-by-example' target='_blank' rel='noreferrer noopener'>esta web</a> hay un ejemplo práctico de qué puede producir.",
+        "message": "Los principales navegadores permiten un mal uso potencial de esta funcionalidad para abrir una pestaña nueva y modificar el contenido de la original. Esta capacidad puede ser usada para ataques de phishing orientados al robo de credenciales. En <a href='https://dev.to/ben/the-targetblank-vulnerability-by-example' target='_blank' rel='noreferrer noopener'>esta web</a> hay un ejemplo práctico de qué puede producir facilitando un enlace de este tipo en una página de Facebook.",
         "description": "Another answer."
     },
     
