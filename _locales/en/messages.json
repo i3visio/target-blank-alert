@@ -31,8 +31,14 @@
         "message": "Target Blank Alert",
         "description": "The name of the extension as it will be shown in the badge appearing in the toolbar."
     },
+    
+    "texInfo": {
+        "message": "Is this website safe?",
+        "description": "A translation for the info tab."
+    },
+    
     "texAbout": {
-        "message": "About this extensión",
+        "message": "FAQ",
         "description": "A translation for about."
     },
     
