@@ -55,8 +55,25 @@ Copyright (C) F. Brezo and Y. Rubio (i3visio) 2016
 		</ul>
 		<!-- TODO: filling the tab -->
 		<div id="tabInfo" class="tab-content">
-			<div id="info"></div>
-			<div id="tweetThis"></div>
+			<div id="infoNotice">
+			</div>
+			
+			<div id="checkFAQ">
+				<p> Si tienes preguntas sobre qué significa esto o quieres más información, siempre puedes consultar la sección de <a href="#tabFAQ">"__MSG_texAbout__</a>.</p>
+			</div>
+			<div>
+				<form id="emailAdminForm" method="get">
+					<button id="emailAdminButton" class="small orange" disabled="true">
+						<i class="fa fa-envelope"></i> Contact the admin
+					</button>
+				</form>
+				
+				<form id="tweetThisForm" method="get" action="http://twitter.com">
+					<button class="small blue" disabled="false">
+						<i class="fa fa-twitter"></i> Tweet this!
+					</button>
+				</form>
+			</div>
 
 		</div>
 		<div id="tabFAQ" class="tab-content">

@@ -23,3 +23,34 @@
 */
 
 
+chrome.runtime.onMessage.addListener(
+  function(request, sender, sendResponse) {
+    //alert(request.greeting["GLOBAL"]);
+    
+    // Grabbing the notice
+    var maincontent = document.getElementById("infoNotice");
+    
+    if (request.greeting["GLOBAL"]>0) {
+        maincontent.innerHTML = '<div class="notice error">Se han encontrado ' + request.greeting["GLOBAL"] + ' enlaces sospechosos en esta página web. </div>';
+        
+        maincontent.innerHTML += "<p>La distribución de enlaces sospechosos es la siguiente:</p>";
+        maincontent.innerHTML += "<ul>";
+        maincontent.innerHTML += '<li><i class="fa fa-chrome"></i> Sin el atributo <code>noopener</code>: <b>' + request.greeting["chrome"]  +  '</b></li>';
+        maincontent.innerHTML += '<li><i class="fa fa-firefox"></i> Sin el atributo <code>noreferrer</code>: <b>' + request.greeting["firefox"]  +  '</b></li>';
+        maincontent.innerHTML += "</ul>";
+        
+        // TODO: Activating buttons
+
+    }
+    else {
+        maincontent.innerHTML = '<div class="notice success">¡Bien! No se han encontrado enlaces sospechosos en esta página web. </div>';
+        
+        // TODO: Activating buttons
+
+    }
+  });
+
+// We send a message to the content
+chrome.tabs.query({active: true, currentWindow: true}, function(tabs){
+    chrome.tabs.sendMessage(tabs[0].id, {task: "recover_vulnerable_links"}, function(response) {});  
+});
