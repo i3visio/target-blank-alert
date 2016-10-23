@@ -36,32 +36,26 @@
         "message": "Is this website safe?",
         "description": "A translation for the info tab."
     },
-    
     "texAbout": {
         "message": "FAQ",
         "description": "A translation for about."
     },
-    
     "questionFaq1": {
         "message": "What does this extension do?",
         "description": "A question."
     },
-    
     "answerFaq1": {
         "message": "The extension is a tiny piece of javascript code that can be found <a href='https://github.com/i3visio/target-blank-alert/blob/master/js/content.js' target='_blank' rel='noreferrer noopener'>here</a> that verifies the content of the websites you visit looking for badly configured links with the attribute <code>target='_blank'</code>.",
         "description": "An answer."
     },
-    
     "questionFaq2": {
         "message": "Did you say <code>target='_blank'</code>?",
         "description": "Another question."
     },
-    
     "answerFaq2": {
         "message": "This attribute corresponds to a HTML option that tells the browser to open the corresponding link in a new tab instead of using the current tab.",
         "description": "Another answer."
     },
-    
     "questionFaq3": {
         "message": "How does this vulnerability work?",
         "description": "Another question."
@@ -70,14 +64,25 @@
         "message": "Main browsers currently allow a misusage of this characteristic that would allow anyone sending a link to, not only opening the link in a new tab, but also refreshing the current tab to any other arbitrary website in the background. This is an issue that can be useful when conducting phishing attacks focused on credential harvesting. In <a href='https://dev.to/ben/the-targetblank-vulnerability-by-example' target='_blank' rel='noreferrer noopener'>this link</a> an expert provides a full example that shows the issue by providing a crafted link via Facebook.",
         "description": "Another answer."
     },
-    
     "questionFaq4": {
         "message": "What can I do to protect me?",
         "description": "Another question."
-    },
-    
+    },    
     "answerFaq4": {
         "message": "First of all, awareness. The user should know that although some websites such as Instagram have already addressed this issue (by setting special attributes to this type of links including the safer <code>rel='noreferrer noopener'</code, others have not worked on that yet. This extension will let you know about how many suspicious links can be found in each website. Awareness is the best way, so if you have found that a website has not fixed this yet, contact with the administrator.",
         "description": "Another answer."
+    },
+    "texCheckFAQ": {
+        "message": "If you had questions about what does this mean, you can check the Frequent Asked Questions section.",
+        "description": "Text introducing the FAQ."
+    },    
+    "texContact": {
+        "message": "Contact the admin",
+        "description": "Text of the button to contact the admin."
+    },
+    "texTweet": {
+        "message": "Tweet this!",
+
+        "description": "Text of the button to tweet the story."
     }
 }

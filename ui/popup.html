@@ -26,7 +26,7 @@ Copyright (C) F. Brezo and Y. Rubio (i3visio) 2016
 <link rel="stylesheet" type="text/css" href="/thirdparties/html-kickstart/css/kickstart.css" media="all" />
 <script type="text/javascript" src="/thirdparties/html-kickstart/js/kickstart.js"></script>
 
-<!-- Loading local Font Awesome 4.5.0 -->
+<!-- Loading local Font Awesome 4.6.3 -->
 <link rel="stylesheet" href="/thirdparties/font-awesome_4.6.3/css/font-awesome.min.css">
 
 <!-- Loading custom styles for the application -->
@@ -59,25 +59,17 @@ Copyright (C) F. Brezo and Y. Rubio (i3visio) 2016
 			</div>
 			
 			<div id="checkFAQ">
-				<p> Si tienes preguntas sobre qué significa esto o quieres más información, siempre puedes consultar la sección de <a href="#tabFAQ">"__MSG_texAbout__</a>.</p>
+				<p>__MSG_texCheckFAQ__</p>
 			</div>
 			<div>
-				<form id="emailAdminForm" method="get">
-					<button id="emailAdminButton" class="small orange" disabled="true">
-						<i class="fa fa-envelope"></i> Contact the admin
-					</button>
-				</form>
-				
-				<form id="tweetThisForm" method="get" action="http://twitter.com">
-					<button class="small blue" disabled="false">
-						<i class="fa fa-twitter"></i> Tweet this!
-					</button>
-				</form>
+				<a class="button small" disabled="disabled" target="_blank" rel="noopener noreferrer"><i class="fa fa-envelope"></i> __MSG_texContact__</a>
+				<a class="button blue small" href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i> __MSG_texTweet__</a>
+			
 			</div>
 
 		</div>
 		<div id="tabFAQ" class="tab-content">
-			<h5> FAQ </h5>
+			<h5>FAQ</h5>
 			<h6><a href="#faq1">__MSG_questionFaq1__</a></h6>
 			<h6><a href="#faq2">__MSG_questionFaq2__</a></h6>
 			<h6><a href="#faq3">__MSG_questionFaq3__</a></h6>
@@ -111,9 +103,9 @@ Copyright (C) F. Brezo and Y. Rubio (i3visio) 2016
 		</div>
 
 		<div class="project">
-			Copyright (C)  <a href="https://i3visio.com">i3visio</a>, 2016:
-			<a href="https://github.com/i3visio/target-blank">__MSG_footerCode__</a> &middot;
-			<a href="https://github.com/i3visio/target-blank/issues">__MSG_footerIssues__</a>
+			Copyright (C)  <a href="https://i3visio.com" target="_blank" rel="noopener noreferrer">i3visio</a>, 2016:
+			<a href="https://github.com/i3visio/target-blank-alert" target="_blank" rel="noopener noreferrer">__MSG_footerCode__</a> &middot;
+			<a href="https://github.com/i3visio/target-blank-alert/issues" target="_blank" rel="noopener noreferrer">__MSG_footerIssues__</a>
 		</div>
 	</small>
 	<br>

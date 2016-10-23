@@ -31,22 +31,18 @@
         "message": "Target Blank Alert",
         "description": "The name of the extension as it will be shown in the badge appearing in the toolbar."
     },
-    
     "texInfo": {
         "message": "¿Es seguro este sitio?",
         "description": "A translation for the info tab."
     },
-    
     "texAbout": {
         "message": "Preguntas frecuentes",
         "description": "A translation for about."
     },
-    
     "questionFaq1": {
         "message": "¿Qué hace esta extensión?",
         "description": "A question."
     },
-    
     "answerFaq1": {
         "message": "La extensión es una porción de código Javascript que puedes encontrar <a href='https://github.com/i3visio/target-blank-alert/blob/master/js/content.js' target='_blank' rel='noreferrer noopener'>aquí</a> que verifica el contenido de las páginas en busca de enlaces que tengan mal configurado su atributo <code>target='_blank'</code>.",
         "description": "An answer."
@@ -55,12 +51,10 @@
         "message": "¿Qué es eso de <code>target='_blank'</code>?",
         "description": "Another question."
     },
-    
     "answerFaq2": {
         "message": "Se trata de una funcionalidad propia de HTML que indica al navegador que el autor de la web quiere que el enlace referido se abra en una pestaña nueva en lugar de en la pestaña actual.",
         "description": "Another answer."
     },
-    
     "questionFaq3": {
         "message": "¿En qué consiste la vulnerabilidad?",
         "description": "Another question."
@@ -69,14 +63,24 @@
         "message": "Los principales navegadores permiten un mal uso potencial de esta funcionalidad para abrir una pestaña nueva y modificar el contenido de la original. Esta capacidad puede ser usada para ataques de phishing orientados al robo de credenciales. En <a href='https://dev.to/ben/the-targetblank-vulnerability-by-example' target='_blank' rel='noreferrer noopener'>esta web</a> hay un ejemplo práctico de qué puede producir facilitando un enlace de este tipo en una página de Facebook.",
         "description": "Another answer."
     },
-    
     "questionFaq4": {
         "message": "¿Qué puedo hacer para protegerme?",
         "description": "Another question."
-    },
-    
+    },   
     "answerFaq4": {
         "message": "De primeras, saber que existe y que algunas de las webs que utilizas habitualmente no lo han corregido. Esta extensión te avisará indicándote el número de enlaces peligrosos que se encuentran en cada sitio web. La concienciación es el mejor camino, así que si sabes de una web que aún no lo ha corregido, repórtaselo a los adminsitradores y avisa a otros usuarios.",
         "description": "Another answer."
+    },
+    "texCheckFAQ": {
+        "message": "Si tienes preguntas sobre qué significa esto o quieres más información, siempre puedes consultar la sección de preguntas frecuentes.",
+        "description": "Text introducing the FAQ."
+    },    
+    "texContact": {
+        "message": "Contacta con el administrador",
+        "description": "Text of the button to contact the admin."
+    },
+    "texTweet": {
+        "message": "Tweet this!",
+        "description": "Text of the button to tweet the story."
     }
 }
