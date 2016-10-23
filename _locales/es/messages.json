@@ -80,7 +80,31 @@
         "description": "Text of the button to contact the admin."
     },
     "texTweet": {
-        "message": "Tweet this!",
+        "message": "¡Tuitéalo!",
         "description": "Text of the button to tweet the story."
-    }
+    },
+    "texNoErrors": {
+        "message": "¡Bien! No se han encontrado enlaces sospechosos en esta página web.",
+        "description": "Text of the success notice."
+    },
+    "texRelation": {
+        "message": "Esta es la cuenta de valores no identificados en el atributo  <code>rel</code> de los enlaces mal configurados:",
+        "description": "Text of the additional notes introduction."
+    },
+    "texErrors1": {
+        "message": "Se ha(n) identificado ",
+        "description": "Text of the first part of the error message."
+    },
+    "texErrors2": {
+        "message": " enlace(s) mal configurado(s).",
+        "description": "Text of the second part of the error mesdage."
+    },
+    "texVulnFound": {
+        "message": " He descubierto algunos links mal configurados usando Target Blank Alert",
+        "description": "Text to be shown in the tweet when a vulnerable link has been found."
+    },
+    "texVulnNotFound": {
+        "message": " He comprobado que el sitio no tiene links mal configurados con Target Blank Alert",
+        "description": "Text to be shown in the tweet when NO vulnerable link has been found."
+    }   
 }

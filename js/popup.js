@@ -29,24 +29,30 @@ chrome.runtime.onMessage.addListener(
     
     // Grabbing the notice
     var maincontent = document.getElementById("infoNotice");
+    var butContactAdmin = document.getElementById("contactAdmin");
+    var butTweetThis = document.getElementById("tweetThis");
     
     if (request.greeting["GLOBAL"]>0) {
-        maincontent.innerHTML = '<div class="notice error">Se han encontrado ' + request.greeting["GLOBAL"] + ' enlaces sospechosos en esta página web. </div>';
+        maincontent.innerHTML = '<div class="notice error">' + chrome.i18n.getMessage("texErrors1") + request.greeting["GLOBAL"] +  chrome.i18n.getMessage("texErrors2") + '</div>';
         
-        maincontent.innerHTML += "<p>La distribución de enlaces sospechosos es la siguiente:</p>";
+        maincontent.innerHTML += "<p>" + chrome.i18n.getMessage("texRelation") + ":</p>";
         maincontent.innerHTML += "<ul>";
-        maincontent.innerHTML += '<li><i class="fa fa-chrome"></i> Sin el atributo <code>noopener</code>: <b>' + request.greeting["chrome"]  +  '</b></li>';
-        maincontent.innerHTML += '<li><i class="fa fa-firefox"></i> Sin el atributo <code>noreferrer</code>: <b>' + request.greeting["firefox"]  +  '</b></li>';
+        maincontent.innerHTML += '<li><i class="fa fa-chrome"></i><code>noopener</code>: <b>' + request.greeting["chrome"]  +  '</b></li>';
+        maincontent.innerHTML += '<li><i class="fa fa-firefox"></i><code>noreferrer</code>: <b>' + request.greeting["firefox"]  +  '</b></li>';
         maincontent.innerHTML += "</ul>";
         
-        // TODO: Activating buttons
-
+        // ACtivating Twitter button
+        butTweetThis.setAttribute("href", "https://twitter.com/intent/tweet?button_hashtag=FixTargetBlankVulnerability " + chrome.i18n.getMessage("texVulnFound"));
+        butTweetThis.setAttribute("disabled", "false");
+       
+        // TODO: Activating contact with the admin button
     }
     else {
-        maincontent.innerHTML = '<div class="notice success">¡Bien! No se han encontrado enlaces sospechosos en esta página web. </div>';
+        maincontent.innerHTML = '<div class="notice success">' + chrome.i18n.getMessage("texNoErrors") + ' </div>';
         
-        // TODO: Activating buttons
-
+        // ACtivating Twitter button
+        butTweetThis.setAttribute("href", "https://twitter.com/intent/tweet?button_hashtag=FixedTargetBlankVulnerability! " + chrome.i18n.getMessage("texVulnNotFound"));
+        butTweetThis.setAttribute("disabled", "false");
     }
   });
 

@@ -82,7 +82,30 @@
     },
     "texTweet": {
         "message": "Tweet this!",
-
         "description": "Text of the button to tweet the story."
-    }
+    },
+    "texNoErrors": {
+        "message": "Nice! No suspicious link was found on this website.",
+        "description": "Text of the success notice."
+    },
+    "texRelation": {
+        "message": "This is the count of missing values in the <code>rel</code> attribute of the misconfigured links identified",
+        "description": "Text of the additional notes introduction."
+    },
+    "texErrors1": {
+        "message": "Ooops! The extension has found ",
+        "description": "Text of the first part of the error message."
+    },
+    "texErrors2": {
+        "message": " misconfigured links.",
+        "description": "Text of the second part of the error mesdage."
+    },
+    "texVulnFound": {
+        "message": " I have just found some misconfigured links in a website using Target Blank Alert",
+        "description": "Text to be shown in the tweet when a vulnerable link has been found."
+    },
+    "texVulnNotFound": {
+        "message": " I have checked that this website doesn't have any misconfigured links using Target Blank Alert",
+        "description": "Text to be shown in the tweet when NO vulnerable link has been found."
+    }   
 }
